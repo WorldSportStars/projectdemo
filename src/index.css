@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: sans-serif;
+}
+
+@keyframes float {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+}
+
+.bg-gradient-main {
+  background: linear-gradient(to top, #000000, #4b0082); /* Gradient czarny z fioletowym */
+}
+
+.bg-gradient-overlay {
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 40%, rgba(0,212,255,0) 100%);
+}
+
+.radial-gradient-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(75, 0, 130, 0.8) 0%, rgba(75, 0, 130, 0) 60%);
+}
+
+.boosts-page {
+  text-align: center;
+}
+
+.boost-item {
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 16px;
+  display: inline-block;
+  width: 80%;
+}
+
+.boost-item img {
+  display: block;
+  margin: 0 auto 16px auto;
+}
+
+.home-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+.home-link img {
+  width: 24px;
+  height: 24px;
+}
